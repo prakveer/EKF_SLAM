@@ -2,7 +2,7 @@
 This project implements an Extended Kalman Filter based SLAM (Simulateneous Localization and Mapping) for the Victoria park dataset.
 
 * The dataset consists of Odometry measurements, GPS and 2D Lidar Scans.
-<p align="left">
+<p align="center">
  <img src="./assets/truck.jpg" width="50%">
 </p>
 
