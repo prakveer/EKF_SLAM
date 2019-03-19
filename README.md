@@ -1,31 +1,28 @@
 ## Introduction
-The goal of this project is to explore autoencoders and variational autoencoders to generate images of faces.
+This project implements an Extended Kalman Filter based SLAM (Simulateneous Localization and Mapping) for the Victoria park dataset
 
-* Autoencoders has been implemented on the CUFS dataset
+* The dataset consists of Odometry measurements, GPS and 2D Lidar Scans.
+<p align="left">
+ <img src="./assets/truck.jpg" width="50%">
+</p>
 
-* VAE's have been implemneted on the CUFS and CelebA datasets
-
-Refer the handout and report for more details.
-
-Also checkout the results of Generative adversarial networks applied to the same task [here](https://github.com/prakveer/Celebrity_generation_GANs) 
-
+Refer the handout for more details.
 
 ## Results
-`Autoencoder results (on CUFS)`
 
 <p align="center">
- <img src="./assets/autoe_results.png" width="50%">
+ <img src="./assets/slam.gif" width="50%">
 </p>
 
-`Variational autoencoder results (on CUFS)`
+`key`
+* The vehicle is shown as a triangle.
+* The rays represent lidar measurements
+* The green cross represents tree landmarks.
+* The blue elipse represents their covariance
 
-<p align="center">
- <img src="./assets/vae_results_cufs.jpg" width="50%">
-</p>
+## Execution
+```
+python slam.py
+```
 
 
-`Variational autoencoder results (on CelebA)`
-
-<p align="center">
- <img src="./assets/vae_results_celeba.jpg" width="50%">
-</p>
